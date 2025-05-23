@@ -71,9 +71,15 @@ h1 {
 }
 
 /* Responsive Design */
+@media (min-width: 1200px) {
+  .gallery {
+    grid-template-columns: repeat(4, 1fr); /* Display 4 images per row on large screens */
+  }
+}
+
 @media (max-width: 768px) {
   .gallery {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Display 1 image per row on medium screens */
   }
 
   .checkbox-group {

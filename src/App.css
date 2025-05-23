@@ -22,6 +22,7 @@ h1 {
   margin-bottom: 20px;
   display: flex;
   gap: 15px;
+  flex-wrap: wrap;
 }
 
 .checkbox-group label {
@@ -67,4 +68,37 @@ h1 {
 .gallery-item p {
   font-size: 0.9rem;
   color: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .checkbox-group {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .App-header {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .checkbox-group label {
+    font-size: 0.9rem;
+  }
+
+  .gallery-item h3 {
+    font-size: 1rem;
+  }
+
+  .gallery-item p {
+    font-size: 0.8rem;
+  }
 }
